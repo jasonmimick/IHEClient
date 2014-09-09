@@ -5,6 +5,7 @@ using System.Text;
 using System.Collections.Generic;
 using System.Dynamic;
 
+/// command line tool to test IHE profiles
 namespace InterSystems.IHE.Client.CLI
 {
 

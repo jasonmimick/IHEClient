@@ -200,7 +200,16 @@ namespace InterSystems.IHE.Client
             var zip = ((BIN)(((PRPA_MT201310UV02Person)(patientPerson)).addr[0].Items[3])).Text[0];
             //var numberOtherIds = ((PRPA_MT201310UV02Person)(patientPerson)).asOtherIDs.Length;
             var ids = new List<PDQIdentifier>();
-            for (var i = 0; i < ((PRPA_MT201310UV02Person)(patientPerson)).asOtherIDs.Length; i++ )
+		
+            for (var i = 0; i < patient.id.Length; i++ )
+            {
+                var id = patient.id[i];
+                //ids.Add(new PDQIdentifier 
+				//	{ ID = id.id[0].extension, Source = id.id[0].root });
+                ids.Add(new PDQIdentifier 
+					{ ID = id.extension, Source = id.root });
+            }
+         for (var i = 0; i < ((PRPA_MT201310UV02Person)(patientPerson)).asOtherIDs.Length; i++ )
             {
                 var id = ((PRPA_MT201310UV02Person)(patientPerson)).asOtherIDs[i];
                 //ids.Add(new { id = id.id[0].extension, source = id.id[0].root });

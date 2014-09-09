@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{674ABBAC-3904-450C-BBCA-B096A948EA1F}</ProjectGuid>
+    <ProjectGuid>{2607C548-EAAA-461A-9D43-AD4EDDFC4CF2}</ProjectGuid>
     <!--<OutputType>Exe</OutputType>-->
     <OutputType>library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -36,13 +36,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-	<!--
+    <!--
     <StartupObject>InterSystems.Panasonic.Scanner.PDQClient</StartupObject>
     <StartupObject>InterSystems.IHE.Client.Test.MainTest</StartupObject>
 	-->
   </PropertyGroup>
   <ItemGroup>
-	<!--
+    <!--
     <Reference Include="Microsoft.Web.Services2, Version=2.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\Microsoft WSE\v2.0\Microsoft.Web.Services2.dll</HintPath>

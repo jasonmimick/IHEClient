@@ -17,6 +17,7 @@ namespace InterSystems.IHE.Client
     {
         public static MimeType PDF = new MimeType("application/pdf");
         public static MimeType XML = new MimeType("text/xml");
+        public static MimeType JPG = new MimeType("image/jpeg");
         private MimeType(string mime)
         {
             this.mime = mime;
